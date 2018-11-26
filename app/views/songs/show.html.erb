@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Songs</title>
+  </head>
+  <body>
+    <h1>View Song:</h1>
+      <h1><%= @song.name %></h1>
+      <p>Genre: <%= link_to @song.genre.name, genre_path(@song.genre) %></p>
+      <p>Artist: <%= link_to @song.artist.name, artist_path(@song.artist) %></p>
+
+
+    <%= link_to "All Songs", songs_path %>
+  </body>
+</html>
